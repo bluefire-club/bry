@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>我的发布</title>
+
+		<link rel="stylesheet" href="../../static/css/common.css" />
+		<link rel="stylesheet" href="../../static/css/login_common.css" />
+		<link
+			rel="stylesheet"
+			href="../../static/css/lecturer/le_upload_ebook.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../../static/css/header.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="../../static/css/footer.css"
+		/>
+
+		<!-- 导入富文本编辑器相关 -->
+		<link
+			rel="stylesheet"
+			href="../../static/other/bootstrap-3.3.7-dist/css/bootstrap.min.css"
+		/>
+		<script src="../../static/js/jquery.min.js"></script>
+		<script
+			type="text/JavaScript"
+			charset="UTF-8"
+			src="../../static/other/bootstrap-3.3.7-dist/js/bootstrap.min.js"
+		></script>
+		<link
+			rel="stylesheet"
+			href="../../static/other/summernote-0.8.16-dist/summernote.min.css"
+		/>
+		<script
+			type="text/JavaScript"
+			charset="UTF-8"
+			src="../../static/other/summernote-0.8.16-dist/summernote.min.js"
+		></script>
+		<script
+			type="text/JavaScript"
+			charset="UTF-8"
+			src="../../static/other/summernote-0.8.16-dist/lang/summernote-zh-CN.min.js"
+		></script>
+
+		<script
+			src="../../static/js/vue.js"
+			type="text/javascript"
+			charset="utf-8"
+		></script>
+
+		<script
+			type="text/JavaScript"
+			charset="UTF-8"
+			src="../../static/js/header.js"
+		></script>
+	</head>
+	<body>
+		<div id="app">
+			<div id="header">
+				<header-item></header-item>
+			</div>
+
+			<div class="bry_container">
+				<!-- 标题及退出登录 -->
+				<div class="bry_title_logout clearfix">
+					<p class="fl">讲师信息</p>
+					<!-- <a class="fr">已登录<a href="">退出</a></p> -->
+				</div>
+
+				<!-- 内容区 -->
+				<div class="bry_inner clearfix">
+					<div class="bry_head_leftnav fl">
+						<!-- 头像与名字 -->
+						<div class="bry_people">
+							<div class="bry_people_pic">
+								<img
+									src="../..//assets/img/mechanism/headicon.jpg"
+								/>
+								<span>讲师</span>
+							</div>
+							<span>sasa</span>
+						</div>
+						<!-- 认证与充值 -->
+						<div class="bry_authentication_recharge">
+							<span>待认证</span>
+							<a href="le_recharge.html">会员充值</a>
+						</div>
+						<!-- 侧导航 -->
+						<ul class="bry_sidenav">
+							<li class="bry_space1">
+								<a href="le_basic_data.html">基本资料</a>
+							</li>
+							<li class="bry_space1">
+								<a href="le_auth_data.html">认证资料</a>
+							</li>
+							<li class="bry_space1">
+								<a href="le_browse.html">我的浏览</a>
+							</li>
+							<li class="bry_space1">
+								<a href="le_answer.html">我的答疑</a>
+							</li>
+							<li class="bry_space1">
+								<a href="le_comment.html">我的评论</a>
+							</li>
+							<li class="bry_space2">
+								<a href="le_forum.html">我的论坛</a>
+							</li>
+							<li class="bry_space2 bry_sidenav_sel">
+								<a href="le_upload.html">我的发布</a>
+							</li>
+							<li class="bry_space2">
+								<a href="le_message.html">我的消息</a>
+							</li>
+							<li><a href="le_account.html">我的账户</a></li>
+						</ul>
+					</div>
+
+					<!-- 右边内容区 -->
+					<div class="bry_main fr">
+						<!-- 最上面的导航 -->
+						<div class="bry_topnav">
+							<a
+								class="bry_topnav_sel"
+								href="le_upload_ebook.html"
+								>添加电子书</a
+							>
+							<a href="le_upload_ebook_record.html">查看记录</a>
+						</div>
+
+						<!-- 百科分类 -->
+						<div class="bry_comwid bry_classi">
+							<span class="bry_comtitle bry_comtitle_star"
+								>百科分类：</span
+							>
+							<ul class="clearfix">
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性科学史</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性生物学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性社会学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性心理学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性健康教育</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>法学伦理</span
+										></label
+									>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 标题 -->
+						<div class="bry_comwid bry_name">
+							<span class="bry_comtitle bry_comtitle_star"
+								>标题：</span
+							>
+							<input type="text" />
+						</div>
+
+						<!-- 是否收费 -->
+						<div class="bry_comwid bry_payno">
+							<span class="bry_comtitle bry_comtitle_star"
+								>是否收费：</span
+							>
+							<label
+								><input type="radio" name="payno" /><span
+									>否</span
+								></label
+							>
+							<label
+								><input type="radio" name="payno" /><span
+									>是</span
+								></label
+							>
+							价格：<input type="text" value="0.00" />元
+						</div>
+
+						<!-- 封面 -->
+						<div class="bry_comwid bry_cover clearfix">
+							<span class="bry_comtitle">封面：</span>
+							<div class="bry_cover_img fl"><img src="" /></div>
+							<div class="bry_cover_info fl">
+								<p>
+									视频封面内容为内容相关海报或截图，用于网站显示，便于用户直观看到。
+								</p>
+								<p>上传文件格式jpg、png，</p>
+								<p>大小2MB以内</p>
+								<div class="bry_cover_btn">
+									<button type="button">本地上传</button>
+									<button type="button">删除</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- 摘要 -->
+						<div class="bry_abstract bry_comwid">
+							<span class="bry_comtitle">摘要：</span>
+							<textarea
+								placeholder="100字以内"
+								maxlength="100"
+							></textarea>
+						</div>
+
+						<!-- 内容 -->
+						<div class="bry_text bry_comwid">
+							<span class="bry_comtitle">内容：</span>
+							<div id="summernote"></div>
+						</div>
+
+						<!-- 标签 -->
+						<div class="bry_comwid bry_label">
+							<span class="bry_comtitle">标签：</span>
+							<ul class="clearfix">
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性科学史</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性生物学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性社会学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性心理学</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>性健康教育</span
+										></label
+									>
+								</li>
+								<li>
+									<label
+										><input type="checkbox" /><span
+											>法学伦理</span
+										></label
+									>
+								</li>
+							</ul>
+						</div>
+
+						<!-- 上架时间 -->
+						<div class="bry_comwid bry_upper">
+							<span class="bry_comtitle bry_comtitle_star"
+								>上架时间：</span
+							>
+							<select name="" id="">
+								<option value="测试">测试</option>
+							</select>
+						</div>
+
+						<!-- 下架时间 -->
+						<div class="bry_comwid bry_lower">
+							<span class="bry_comtitle bry_comtitle_star"
+								>下架时间：</span
+							>
+							<select name="" id="">
+								<option value="测试">测试</option>
+							</select>
+						</div>
+
+						<!-- 上传 -->
+						<div class="bry_comwid bry_upvedio">
+							<span class="bry_comtitle bry_comtitle_star"
+								>上传：</span
+							>
+							<button type="button">批量添加</button>
+							<span
+								>上传视频文件格式PDF、word、TXT文件或jpg、png图片，可以批量选择上传。</span
+							>
+						</div>
+
+						<!-- 保存按钮 -->
+						<button type="button" class="bry_save">保存</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="bry_footer">
+				<div class="inner">
+					<div class="bry_footer_nav">
+						<ul class="clearfix">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="bry_lecturer.html">讲师</a></li>
+							<li><a href="bry_information.html">资讯</a></li>
+							<li><a href="bry_Movies.html">视频</a></li>
+							<li><a href="bry_audioFrequency.html">音频</a></li>
+							<li><a href="bry_forum.html">论坛</a></li>
+							<li><a href="encyclopedias.html">百科</a></li>
+							<li><a href="book.html">电子书</a></li>
+							<li><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="bry_copy_msg clearfix">
+						<div class="fl">
+							<img
+								src="../../assets/icon/footer/official_account.gif"
+							/>
+							<div class="tc">关注公众号</div>
+						</div>
+						<div class="fl">
+							<img
+								src="../../assets/icon/footer/phone_code.gif"
+							/>
+							<div class="tc">手机网站</div>
+						</div>
+						<div class="bry_copyright fl">
+							<div>
+								重庆思无邪网络科技有限公司 &nbsp;&nbsp;版权所有
+							</div>
+							<div>
+								渝ICP备005665656号<img
+									src="../../assets/icon/footer/keep_on_record.png"
+								/>渝公安备 50019002501739
+							</div>
+							<div>All Rights Reserved, Copyright 2019-2020</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/JavaScript" charset="UTF-8">
+		var vueobj = new Vue({
+			el: '#app',
+			mounted() {
+				// this.nextTick(){
+					$('#summernote').summernote({
+						lang: 'zh-CN',
+						placeholder: '请输入内容',
+						height: 470,
+						disableDragAndDrop: true,
+						shortcuts: false,
+						tabDisable: false,
+						toolbar: [
+							['font',['bold','underline','strikethrough','superscript','subscript','clear']],
+							['fontname',['fontsize']],
+							['color',['forecolor','backcolor']],
+							['hr'],
+							['table'],
+							['link',['picture','link','video']],
+							['misc',['undo','redo','help']]
+						]
+					});
+				// }
+			}
+		});
+	</script>
+</html>

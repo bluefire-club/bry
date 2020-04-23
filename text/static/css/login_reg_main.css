@@ -1,0 +1,171 @@
+html,body{
+	background-color: #05a0bf;
+	min-width: 1320px;
+}
+.inner{
+	width: 1320px;
+	margin: 0 auto;
+}
+.bry_login_main{
+	height: 1060px;
+}
+.bry_login_top{
+	position: relative;
+	height: 578px;
+	padding-top: 40px;
+	box-sizing: border-box;
+}
+.bry_login_box{
+	position: absolute;
+	left: 50%;
+	transform: translate(-342px);
+	width: 684px;
+	height: 486px;
+	border-radius: 7px;
+	background-color: #efefef;
+}
+.bry_box_tit{
+	height: 64px;
+	font-size:20px ;
+	color: #9a9a9a;
+	padding: 20px 0 0 60px;
+	box-sizing: border-box;
+	background: url(../../assets/icon/login.png)20px center no-repeat;
+}
+.bry_box_con{
+	position: absolute;
+	left: 50%;
+	width: 492px;
+	transform: translate(-246px);
+}
+.bry_box_input{
+	height: 100px;
+	box-sizing: border-box;
+	border: 1px solid #059fbf;
+	border-radius: 7px;
+}
+.bry_user{
+	height: 50px;
+	padding-left: 56px;
+	background: url(../../assets/icon/user.png) no-repeat 24px center;
+	border-bottom: 1px solid #059fbf;
+}
+.bry_user>input{
+	height: 50px;
+	line-height: 50px;
+	width: 80%;
+	font-size: 14px;
+	color: #999;
+	background-color: transparent;
+	outline: none;
+}
+.bry_password{
+	height: 50px;
+	padding-left: 56px;
+	background: url(../../assets/icon/passowrd.png) no-repeat 24px center;
+}
+.bry_password>input{
+	height: 50px;
+	line-height: 50px;
+	width: 80%;
+	font-size: 14px;
+	color: #999;
+	background-color: transparent;
+	outline: none;
+}
+.bry_box_forget{
+	height: 24px;
+	line-height: 24px;
+	padding: 4px 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+}
+.bry_box_forget a{
+	color: #333;
+}
+/* 第三方登录 */
+.bry_box_thirdpart{
+	height: 170px;
+	padding: 26px 92px 35px 92px ;
+	box-sizing: border-box;
+	text-align: center;
+	font-size: 18px;
+}
+.bry_box_thirdpart img{
+	width: 88px;
+	height: 88px;
+	padding-bottom: 14px;
+}
+.bry_box_thirdpart a{
+	color: #333;
+}
+.bry_box_select{
+	height: 24px;
+	font-size: 14px ;
+	color: #333;
+	padding-left: 76px;
+	padding-bottom: 28px;
+}
+.bry_box_select a{
+	color: #059fbf;
+}
+.bry_login_btn{
+	position: relative;
+	height: 36px;
+	font-size:16px ;
+	color: #fff;
+}
+.bry_login_btn button{
+	position: absolute;
+	left: 50%;
+	transform: translate(-62px);
+	width: 124px;
+	height: 36px;
+	line-height: 36xp;
+	border-radius: 7px;
+	color: #fff;
+	background-color: #059fbf;
+	text-align: center;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+/* 用户注册 */
+.bry_user_register_tit{
+	height: 36px;
+	padding-left: 96px;
+	font-size: 20px;
+	color: #fff;
+	background: url(../../assets/icon/login_pic.png) 50px no-repeat;
+	background-size: 36px 36px;
+}
+.bry_user_register_con{
+	padding: 28px 50px 0 50px ;
+	box-sizing: border-box;
+}
+.bry_user_register_con>li{
+	float: left;
+	width: 354px;
+	height: 148px;
+	padding-top: 26px;
+	border-radius: 7px;
+	text-align: center;
+	background-color: #efefef;
+	margin-right: 40px;
+	margin-bottom: 30px;
+}
+.bry_user_register_con a{
+	font-size: 24px;
+	color: #333;
+}
+.bry_user_register_con a img{
+	display: inline-block;
+	width:46px ;
+	height: 46px;
+	vertical-align: middle;
+}
+.bry_user_register_con p{
+	font-size: 12px;
+	color: #333;
+	padding-top: 17px;
+}

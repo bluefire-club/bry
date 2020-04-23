@@ -1,0 +1,119 @@
+.bry_book_content {
+	background-color: #059fbf;
+	padding-bottom: 34px;
+}
+.bry_book_path {
+	font-size: 14px;
+	color: #fff;
+	padding: 28px 20px;
+	background: url(../../assets/icon/bry_encyc/bry_encyc_home.png) no-repeat left;
+}
+.bry_book_content > .inner > .fl {
+	margin-left: 24px;
+}
+.bry_book_imgs {
+	width: 994px;
+	height: 1312px;
+	padding: 20px 14px;
+	background-color: #efefef;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.6);
+	border-radius: 6px;
+	box-sizing: border-box;
+}
+.bry_book_imgs img {
+	width: 100%;
+	height: 100%;
+}
+.bry_book_choice {
+	padding: 24px 48px 32px;
+	font-size: 14px;
+	color: #fff;
+}
+.bry_book_fs span{
+	margin: 0 6px;
+}
+.bry_book_fs span:not(:first-child){
+	cursor: pointer;
+}
+.bry_book_pages li {
+	float: left;
+	margin: 0 6px;
+	cursor: pointer;
+}
+.bry_book_pages li button {
+	background-color: #017289;
+	width: 22px;
+	height: 22px;
+	border-radius: 4px;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	cursor: pointer;
+}
+.bry_book_pages li.active button {
+	background-color: #cba634;
+}
+.bry_book_share {
+	text-align: center;
+	font-size: 12px;
+	color: #fff;
+}
+.bry_book_share span,
+.bry_book_share img {
+	cursor: pointer;
+}
+.bry_book_share img {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 6px;
+}
+.bry_book_share > .clearfix > div {
+	display: inline-block;
+	width: 86px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #017289;
+	border-radius: 5px;
+	font-size: 12px;
+	margin: 12px 11px 10px;
+	cursor: pointer;
+}
+.bry_book_share > .clearfix > div.active {
+	background-color: #fc9440;
+}
+.bry_book_share > .clearfix img {
+	vertical-align: text-bottom;
+	margin-right: 4px;
+}
+.bry_book_class {
+	width: 276px;
+}
+.bry_book_class ul~ul {
+	margin-top: 28px;
+}
+.bry_book_class .bry_book_fr_title {
+	background-color: #e5741a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 16px;
+	color: #fff;
+	border-radius: 6px;
+	margin-bottom: 6px;
+}
+.bry_book_class li {
+	font-size: 12px;
+	color: #fff;
+	line-height: 28px;
+	cursor: pointer;
+}
+.bry_book_class li div {
+	margin-right: 8px;
+}
+.bry_book_class li img{
+	display: inline-block;
+	margin-right: 4px;
+}
+.bry_book_class li:hover {
+	color: #e3e3e3;
+}
+

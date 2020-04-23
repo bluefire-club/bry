@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>电子书</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/book.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css" />
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/JavaScript" charset="UTF-8" src="../static/js/vue.js"></script>
+		<script type="text/JavaScript" charset="UTF-8" src="../static/js/header.js"></script>
+	</head>
+
+	<body>
+		<div id="app">
+			<div id="header">
+				<header-item></header-item>
+			</div>
+			<!-- 焦点 -->
+			<div class="bry_book_focus inner">
+				<div class="focus_content overflow">
+					<div class="bry_book_focus_background">
+						<!-- 焦点列表 -->
+						<ul class="focus_list">
+							<li class="focus_list_item">
+								<p>
+									<span>《小鸡鸡的故事》</span>
+									<span>小鸡鸡的故事绘本</span>
+								</p>
+								<span></span>
+							</li>
+							<li class="focus_list_item orange_gradation">
+								<p>
+									<span>《成长与性》</span>
+									<span>帮助父母回答孩子“尴尬”问题的书</span>
+								</p>
+								<span></span>
+							</li>
+							<li class="focus_list_item">
+								<p>
+									<span>《乳房的故事》</span>
+									<span>中国儿童性教育专家胡萍审订推荐</span>
+								</p>
+								<span></span>
+							</li>
+							<li class="focus_list_item">
+								<p>
+									<span>《我们的身体》</span>
+									<span>中国儿童性教育专家胡萍审订推荐</span>
+								</p>
+								<span></span>
+							</li>
+						</ul>
+						<!-- 电子书焦点内容 -->
+						<ul class="bry_book_focus_information">
+							<li>
+								<div class="bry_book_focus_information_text">
+									<div class="information_text">
+										<p>
+											《成长与性》是2004年7月1日科学出版社出版的图书，作者是
+										</p>
+										<p>
+											胡萍。本书是一本孩子自己能够看得懂的书，同时也是一本能帮助父母回答孩子“尴尬”问题的书。
+											本书适合6-10岁的孩子及其家长阅读
+										</p>
+									</div>
+								</div>
+								<div class="information_img">
+									<img src="../assets/img/information_img.png" />
+								</div>
+								<!-- 翻页图 -->
+								<div class="information_page_item">
+									<div class="information_page_img">
+										<img src="../assets/img/information_page_img.png" />
+									</div>
+									<div class="information_page_button">
+										<button type="button" id="share"></button>
+										<button type="button" id="upper_page">
+											<上一页 </button> <button type="button" id="lower_page">
+												下一页>
+										</button>
+										<button type="button" id="screen"></button>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bry_inners inner">
+				<!-- 推荐 -->
+				<div class="bry_book_recommend">
+					<ul class="recommend_list clearfix">
+						<li class="recommend_list_item color_orange">
+							最新上传
+						</li>
+						<li class="recommend_list_item">
+							人气榜
+						</li>
+					</ul>
+					<div class="recommend_book">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<a href="bry_book_info.html">
+										<div>
+											<img src="../assets/img/recommend_book1.png" />
+										</div>
+										<p>儿童性教育</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="bry_book_info.html">
+										<div>
+											<img src="../assets/img/recommend_book2.png" />
+										</div>
+										<p>中学性教育</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="bry_book_info.html">
+										<div>
+											<img src="../assets/img/recommend_book3.png" />
+										</div>
+										<p>大学性教育</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div>
+											<img src="../assets/img/recommend_book4.png" />
+										</div>
+										<p>成人性教育</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div>
+											<img src="../assets/img/recommend_book5.png" />
+										</div>
+										<p>法律法规</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div>
+											<img src="../assets/img/recommend_book5.png" />
+										</div>
+										<p>法律法规</p>
+									</a>
+								</div>
+								<div class="swiper-slide">
+									<a href="">
+										<div>
+											<img src="../assets/img/recommend_book5.png" />
+										</div>
+										<p>法律法规</p>
+									</a>
+								</div>
+							</div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+				<!-- 屏幕列表 -->
+				<span class="stripe"></span>
+				<ul class="bry_screenList clearfix">
+					<li class="bry_screenLi bry_screenLi_type1">
+						<span></span>
+						<span>精选书籍</span>
+					</li>
+					<li class="bry_screenLi bry_screenLi_type2">
+						<span></span>
+						<span>大咖专辑</span>
+					</li>
+					<li class="bry_screenLi bry_screenLi_type2">
+						<span></span>
+						<span>大学</span>
+					</li>
+				</ul>
+				<!-- 精选书籍 -->
+				<div class="bry_book_selected">
+					<ul class="bry_book_selected_list clearfix">
+						<li class="bry_book_selected_item">
+							<a href="bry_book_info.html">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="bry_book_info.html">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="bry_book_info.html">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li><span>186</span></li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item2.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+						<li class="bry_book_selected_item">
+							<a href="">
+								<div>
+									<img src="../assets/img/bry_book_selected_item1.png" />
+								</div>
+								<ul class="selected_item_text">
+									<li>教你如何撒娇</li>
+									<li><span>高智/情商 甜宠之恋</span></li>
+									<li>
+										<span class="selected_item_spot">186</span>
+									</li>
+								</ul>
+							</a>
+						</li>
+					</ul>
+					<!-- 翻页 -->
+					<div class="bry_encyclopedias_page">
+						<ul class="bry_encyclopedias_page_list">
+							<li>
+								<button type="button" class="page_button page_home">
+									首页
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page_button page_upper">
+									上一页
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page_button page_left_arrow"></button>
+							</li>
+							<li>
+								<button type="button" class="page-item active">
+									1
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									2
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									3
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									4
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									5
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									6
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									7
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page-item">
+									8
+								</button>
+							</li>
+							<strong>...</strong>
+							<li>
+								<span>跳至</span>
+								<input type="number" />
+								<button type="button" class="page_button page_jump">
+									页
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page_button page_right_arrow"></button>
+							</li>
+							<li>
+								<button type="button" class="page_button page_lower">
+									下一页
+								</button>
+							</li>
+							<li>
+								<button type="button" class="page_button page_tail">
+									尾页
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="bry_footer">
+				<div class="inner">
+					<div class="bry_footer_nav">
+						<ul class="clearfix">
+							<li><a href="index.html">首页</a></li>
+							<li><a href="bry_information.html">资讯</a></li>
+							<li><a href="bry_Movies.html">视频</a></li>
+							<li><a href="bry_audioFrequency.html">音频</a></li>
+							<li><a href="bry_forum.html">论坛</a></li>
+							<li><a href="encyclopedias.html">百科</a></li>
+							<li><a href="book.html">电子书</a></li>
+							<li><a href="about.html">关于我们</a></li>
+						</ul>
+					</div>
+					<div class="bry_copy_msg clearfix">
+						<div class="fl">
+							<img src="../assets/icon/footer/official_account.gif" />
+							<div class="tc">关注公众号</div>
+						</div>
+						<div class="fl">
+							<img src="../assets/icon/footer/phone_code.gif" />
+							<div class="tc">手机网站</div>
+						</div>
+						<div class="bry_copyright fl">
+							<div>
+								重庆思无邪网络科技有限公司 &nbsp;&nbsp;版权所有
+							</div>
+							<div>
+								渝ICP备005665656号<img src="../assets/icon/footer/keep_on_record.png" />渝公安备 50019002501739
+							</div>
+							<div>All Rights Reserved, Copyright 2019-2020</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../static/js/book.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var vueobj = new Vue({
+			el: "#app",
+			created() {},
+		});
+	</script>
+</html>

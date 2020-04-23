@@ -1,0 +1,198 @@
+.bry_main {
+    width: 1088px;
+    position: relative;
+	padding-top: 54px;
+}
+.bry_inner {
+	min-height: 1300px;
+}
+
+/* 最上面的导航 */
+.bry_topnav>a {
+	font-size: 18px;
+	color: #333333;
+	margin-right: 20px;
+}
+.bry_topnav .bry_topnav_sel {
+	color: #059fbf;
+}
+
+/* 共通的部分 */
+.bry_comwid {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 92px;
+	position: relative;
+}
+
+.bry_comtitle {
+	position: absolute;
+	right: 1002px;
+	top: 9px;
+	font-size: 14px;
+	color: #333333;
+}
+.bry_comtitle_star::before {
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: 0;
+	content: "*";
+	color: red;
+}
+
+/* 标题 */
+.bry_title {
+	margin-top: 20px;
+	padding-top: 4px;
+}
+
+.bry_title>input {
+	width: 490px;
+	height: 36px;
+	box-sizing: border-box;
+	border: 1px solid #c1c1c1;
+	border-radius: 5px;
+}
+
+/* 封面 */
+.bry_cover {
+	margin-top: 24px;
+	position: relative;
+}
+
+.bry_cover_img {
+	width: 186px;
+	height: 110px;
+	box-sizing: border-box;
+	border: 1px solid #c1c1c1;
+	border-radius: 5px;
+	background: white;
+	margin-top: 8px;
+}
+
+.bry_cover_info {
+	font-size: 12px;
+	color: #666666;
+	padding-top: 10px;
+	padding-left: 16px;
+	position: relative;
+}
+
+.bry_cover_info>p {
+	padding-bottom: 3px;
+}
+
+.bry_cover_btn {
+	position: absolute;
+	bottom: -38px;
+}
+.bry_cover_btn>button {
+	width: 72px;
+	height: 22px;
+	background: #999999;
+	color: white;
+	font-size: 12px;
+	border: none;
+	border-radius: 4px;
+	margin-right: 18px;
+	outline: none;
+	cursor: pointer;
+}
+
+/* 摘要 */
+.bry_abstract {
+	margin-top: 24px;
+}
+.bry_abstract>textarea {
+	resize: none;
+	outline: none;
+	border-radius: 5px;
+	width: 596px;
+	height: 84px;
+	border: 1px solid #c1c1c1;
+	box-sizing: border-box;
+	padding: 7px;
+}
+
+/* 内容 */
+.bry_text {
+	margin-top: 20px;
+}
+
+.bry_text>div {
+	width: 906px;
+	/* height: 508px; */
+	border: 1px solid #c1c1c1;
+	border-radius: 5px;
+	background: white;
+}
+
+/* 标签 */
+.bry_label {
+	font-size: 14px;
+	color: #333333;
+	padding-top: 7px;
+	margin-top: 16px;
+}
+
+.bry_label ul>li {
+	float: left;
+	padding-right: 30px;
+}
+
+.bry_label ul>li>label {
+	vertical-align: middle;
+	font-weight: 400;
+	margin: 0;
+}
+.bry_label ul>li input {
+	margin: 0;
+	margin-right: 4px;
+	vertical-align: middle;
+}
+p {
+	margin: 0 0 0 0 !important;
+}
+
+/* 上传咨询 */
+.bry_upinfo {
+	font-size: 12px;
+	color: #333333;
+	margin-top: 16px;
+}
+
+.bry_upinfo>button {
+	width: 182px;
+	height: 30px;
+	border-radius: 5px;
+	background: #059fbf;
+	border: none;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	margin-top: 4px;
+}
+.bry_upinfo>span {
+	font-size: 12px;
+	color: #333333;
+	padding-left: 14px;
+}
+
+/* 保存按钮 */
+.bry_save {
+	width: 444px;
+	height: 38px;
+	border-radius: 5px;
+	border: none;
+	background: #059fbf;
+	letter-spacing: 1em;
+	text-indent: 1em;
+	font-size: 18px;
+	color: white;
+	margin-top: 64px;
+	margin-bottom: 40px;
+	margin-left: 280px;
+	outline: none;
+	cursor: pointer;
+}

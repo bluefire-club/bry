@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>公开课</title>
+		<link rel="stylesheet" type="text/css" href="../static/css/swiper.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/open.css" />
+		<link rel="stylesheet" type="text/css" href="../static/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/header.css"/>
+		<script src="../static/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/swiper.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/header.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div id="app">
+		<div id="header">
+			<header-item></header-item>
+		</div>
+		<!-- 焦点 -->
+		<div class=" bry_open_focus inner">
+			<div class="focus_content">
+				<ul class="bry_open_focus_img">
+					<li><img src="../assets/img/bry_open_focus_img.png"></li>
+				</ul>
+				<!-- 焦点列表 -->
+				<ul class="focus_list">
+					<li class="focus_list_item">
+						<p>
+							<span>美国青春性教育片</span>
+							<span>《美国派》</span>
+						</p>
+						<span></span>
+					</li>
+					<li class="focus_list_item orange_cyan_gradation">
+						<p>
+							<span>法国奥斯卡金像提名奖</span>
+							<span>《巴黎野玫瑰》</span>
+						</p>
+						<span></span>
+					</li>
+					<li class="focus_list_item">
+						<p>
+							<span>印度青少年儿童性教育片</span>
+							<span>《父与子的性教尬聊》</span>
+						</p>
+						<span></span>
+					</li>
+					<li class="focus_list_item">
+						<p>
+							<span>法国奥斯卡金像提名奖</span>
+							<span>《西西里的美丽传说》</span>
+						</p>
+						<span></span>
+					</li>
+					<li class="focus_list_item">
+						<p>
+							<span>法国奥斯卡金像提名奖</span>
+							<span>《巴黎野玫瑰》</span>
+						</p>
+						<span></span>
+					</li>
+					<li class="focus_list_item">
+						<p>
+							<span>法国奥斯卡金像提名奖</span>
+							<span>《巴黎野玫瑰》</span>
+						</p>
+						<span></span>
+					</li>
+				</ul>
+				<!-- 焦点视频视频 -->
+				<ul class="bry_open_focus_video">
+					<li></li>
+				</ul>
+			</div>
+		</div>
+		<div class="bry_inners inner">
+			<!-- 推存视频 -->
+			<div class="bry_open_video_newest">
+				<ul class="video_recommend_list clearfix">
+					<li class="video_recommend_list_item color_orange">
+						最新上传
+					</li>
+					<li class="video_recommend_list_item">
+						热播榜
+					</li>
+					<li class="video_recommend_list_item">
+						排行榜
+					</li>
+				</ul>
+				<!-- 视频 -->
+				<div class="recommend_video">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="bry_Movies_info.html">
+									<div class="swiper_div">
+										<img src="../assets/img/recommend_video.png">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="bry_Movies_info.html">
+									<div class="swiper_div">
+										<img src="../assets/img/recommend_video.png">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="bry_Movies_info.html">
+									<div class="swiper_div">
+										<img src="../assets/img/recommend_video.png">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<div class="swiper_div">
+										<img src="../assets/img/recommend_video.png">
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="">
+									<div class="swiper_div">
+										<img src="../assets/img/recommend_video.png">
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 屏幕列表 -->
+			<span class="stripe"></span>
+			<ul class="bry_screenList clearfix">
+				<li class="bry_screenLi bry_screenLi_type1">
+					<span></span>
+					<span>儿童</span>
+				</li>
+				<li class="bry_screenLi bry_screenLi_type2">
+					<span></span>
+					<span>中学</span>
+				</li>
+				<li class="bry_screenLi bry_screenLi_type2">
+					<span></span>
+					<span>大学</span>
+				</li>
+				<li class="bry_screenLi bry_screenLi_type2">
+					<span></span>
+					<span>成人</span>
+				</li>
+			</ul>
+
+			<!-- 精选视频 -->
+			<div class="bry_open_featured_videos">
+				<ul class="bry_open_featured_videos_list clearfix">
+					<li class="featured_videos_item">
+						<a href="bry_Movies_info.html">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="bry_Movies_info.html">
+							<div class="bry_Pay"></div>
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="bry_Movies_info.html">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div class="bry_Pay"></div>
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div class="bry_Pay"></div>
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item1.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>西西里的美丽传说</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item2.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>美国往事</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+
+
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item3.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>天堂电影院</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+					<li class="featured_videos_item">
+						<a href="">
+							<div>
+								<img src="../assets/img/bry_book_featured_videos_item4.png">
+							</div>
+							<ul class="selected_item_text">
+								<li>父与子的性教尬聊</li>
+								<li><span class="selected_item_spot">296</span></li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+
+				<!-- 翻页 -->
+				<div class="bry_encyclopedias_page">
+					<ul class="bry_encyclopedias_page_list">
+						<li><button type="button" class="page_button page_home">首页</button></li>
+						<li><button type="button" class="page_button page_upper">上一页</button></li>
+						<li><button type="button" class="page_button page_left_arrow"></button></li>
+						<li><button type="button" class="page-item active">1</button></li>
+						<li><button type="button" class="page-item">2</button></li>
+						<li><button type="button" class="page-item">3</button></li>
+						<li><button type="button" class="page-item">4</button></li>
+						<li><button type="button" class="page-item">5</button></li>
+						<li><button type="button" class="page-item">6</button></li>
+						<li><button type="button" class="page-item">7</button></li>
+						<li><button type="button" class="page-item">8</button></li>
+						<strong>...</strong>
+						<li>
+							<span>跳至</span>
+							<input type="number" />
+							<button type="button" class="page_button page_jump">页</button>
+						</li>
+						<li><button type="button" class="page_button page_right_arrow"></button></li>
+						<li><button type="button" class="page_button page_lower">下一页</button></li>
+						<li><button type="button" class="page_button page_tail">尾页</button></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="bry_footer">
+			<div class="inner">
+				<div class="bry_footer_nav">
+					<ul class="clearfix">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="bry_information.html">资讯</a></li>
+						<li><a href="bry_Movies.html">视频</a></li>
+						<li><a href="bry_audioFrequency.html">音频</a></li>
+						<li><a href="bry_forum.html">论坛</a></li>
+						<li><a href="encyclopedias.html">百科</a></li>
+						<li><a href="book.html">电子书</a></li>
+						<li><a href="about.html">关于我们</a></li>
+					</ul>
+				</div>
+				<div class="bry_copy_msg clearfix">
+					<div class="fl">
+						<img src="../assets/icon/footer/official_account.gif" >
+						<div class="tc">关注公众号</div>
+					</div>
+					<div class="fl">
+						<img src="../assets/icon/footer/phone_code.gif" >
+						<div class="tc">手机网站</div>
+					</div>
+					<div class="bry_copyright fl">
+						<div>重庆思无邪网络科技有限公司 &nbsp;&nbsp;版权所有</div>
+						<div>渝ICP备005665656号<img src="../assets/icon/footer/keep_on_record.png" >渝公安备 50019002501739	</div>
+						<div>All Rights Reserved, Copyright 2019-2020</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var vueobj = new Vue({
+			el: "#app",
+			created() {},
+			mounted() {
+				this.getswiper()
+			},
+			methods:{
+				getswiper(){
+					var swiper = new Swiper('.recommend_video .swiper-container', {
+						slidesPerView: 5,
+						spaceBetween: 46,
+						slidesPerGroup: 1,
+						loop: true,
+						loopFillGroupWithBlank: true,
+						autoplay: true,
+						delay: 3000,
+						pagination: {
+							el: '.swiper-pagination',
+							clickable: true,
+						},
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+					
+					var swiper1 = new Swiper('.bry_activity_focus_img .swiper-container', {
+						loop: true,
+						autoplay: true,
+						delay: 3000,
+						navigation: {
+							nextEl: '.swiper-button-next',
+							prevEl: '.swiper-button-prev',
+						},
+					});
+					
+				}
+			}
+		});
+	</script>
+</html>

@@ -1,0 +1,10 @@
+.bry_main{
+	padding: 118px 0 0 20px;
+	box-sizing: border-box;
+}
+.layui-table td, .layui-table th, .layui-table-col-set, .layui-table-fixed-r, .layui-table-grid-down, .layui-table-header, .layui-table-page, .layui-table-tips-main, .layui-table-tool, .layui-table-total, .layui-table-view, .layui-table[lay-skin=line], .layui-table[lay-skin=row] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #059fbf !important;
+	text-align: center !important;
+}
